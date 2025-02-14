@@ -73,15 +73,15 @@ export default function ValentinePage() {
       </video>
 
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center text-white p-6">
-        <h1 className="text-5xl font-bold">Happy Valentine's Day! 💖</h1>
+        <h1 className="text-4xl font-bold">Happy Valentine's Day! 💖</h1>
         {/* <p className="text-3xl mt-4">I love you so much 💖 GRACE 💖</p> */}
-        <p className="text-3xl mt-4">Meow Meow Meow ᓚ₍⑅^. .^₎ᵐᵉᵒʷˎˊ˗</p>
+        <p className="text-2xl mt-4">Meow Meow Meow ᓚ₍⑅^. .^₎ᵐᵉᵒʷˎˊ˗</p>
 
         <button
           onClick={() => setIsGalleryOpen(!isGalleryOpen)} // Toggle gallery visibility
           className="mt-6 px-6 py-3 bg-red-600 text-white text-lg rounded-lg shadow-lg hover:bg-red-700"
         >
-          {isGalleryOpen ? "Hide!!" : "Show!!"}
+          {isGalleryOpen ? "Hide!!" : "Click!!"}
         </button>
 
         {/* Collapsible Gallery Content */}
