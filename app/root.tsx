@@ -1,11 +1,12 @@
 import {
   Links,
   Meta,
-  Outlet,
+  // Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
+import ValentinePage from "~/componets/valentine";
 
 import "./tailwind.css";
 
@@ -41,5 +42,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  // return <Outlet />;
+  return (
+    <>
+      <ValentinePage />
+      {/* <Outlet /> ใช้เพื่อแสดงหน้าอื่น ๆ */}
+    </>
+  );
 }
