@@ -9,7 +9,12 @@ export default function ValentinePage() {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
 
   // ลิสต์ของวิดีโอทั้งหมด
-  const videoList = ["/media/vdo1.mp4", "/media/vdo2.mp4", "/media/vdo3.mp4"];
+  const videoList = [
+    "/media/vdo9.mp4",
+    "/media/vdo5.mp4",
+    "/media/vdo6.mp4",
+    "/media/vdo7.mp4",
+  ];
 
   useEffect(() => {
     if (videoRef.current) {
@@ -67,17 +72,11 @@ export default function ValentinePage() {
         <source src={videoList[currentVideoIndex]} type="video/mp4" />
       </video>
 
-      {/* Content Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center text-white p-6">
         <h1 className="text-5xl font-bold">Happy Valentine's Day! 💖</h1>
-        <p className="text-3xl mt-4">
-          I love you so much 💖 GRACE 💖
-        </p>
-        {/* <p className="text-lg mt-4">
-          Wishing you love and happiness on this special day.
-        </p> */}
+        {/* <p className="text-3xl mt-4">I love you so much 💖 GRACE 💖</p> */}
+        <p className="text-3xl mt-4">Meow Meow Meow ᓚ₍⑅^. .^₎ᵐᵉᵒʷˎˊ˗</p>
 
-        {/* Collapsible Image Gallery */}
         <button
           onClick={() => setIsGalleryOpen(!isGalleryOpen)} // Toggle gallery visibility
           className="mt-6 px-6 py-3 bg-red-600 text-white text-lg rounded-lg shadow-lg hover:bg-red-700"
@@ -93,24 +92,46 @@ export default function ValentinePage() {
               : "max-h-0 opacity-0 invisible"
           }`}
         >
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <img
-              src="/media/img1.jpg"
+              src="/media/img5.jpg"
               alt="Love 1"
               className="rounded-xl shadow-lg w-32 h-32 object-cover border-0 outline-none" // Set small size
             />
             <img
-              src="/media/img2.jpg"
+              src="/media/img13.jpg"
+              alt="Love 4"
+              className="rounded-xl shadow-lg w-32 h-32 object-cover border-0 outline-none" // Set small size
+            />
+            <img
+              src="/media/img6.jpg"
               alt="Love 2"
               className="rounded-xl shadow-lg w-32 h-32 object-cover border-0 outline-none" // Set small size
             />
             <img
-              src="/media/img3.jpg"
-              alt="Love 3"
+              src="/media/img14.jpg"
+              alt="Love 4"
               className="rounded-xl shadow-lg w-32 h-32 object-cover border-0 outline-none" // Set small size
             />
             <img
-              src="/media/img4.jpg"
+              src="/media/img9.jpg"
+              alt="Love 4"
+              className="rounded-xl shadow-lg w-32 h-32 object-cover border-0 outline-none" // Set small size
+            />
+            <img
+              src="/media/img7.jpg"
+              alt="Love 3"
+              className="rounded-xl shadow-lg w-32 h-32 object-cover border-0 outline-none" // Set small size
+            />
+
+            <img
+              src="/media/img10.jpg"
+              alt="Love 4"
+              className="rounded-xl shadow-lg w-32 h-32 object-cover border-0 outline-none" // Set small size
+            />
+
+            <img
+              src="/media/img8.jpg"
               alt="Love 4"
               className="rounded-xl shadow-lg w-32 h-32 object-cover border-0 outline-none" // Set small size
             />
@@ -119,7 +140,8 @@ export default function ValentinePage() {
 
         {/* Hidden Audio Player */}
         <audio ref={audioRef} autoPlay loop className="hidden">
-          <source src="/media/videoplayback.mp3" type="audio/mp3" />
+          {/* <source src="/media/videoplayback.mp3" type="audio/mp3" /> */}
+          <source src="/media/My Everything.mp3" type="audio/mp3" />
         </audio>
 
         {/* Call to Action
